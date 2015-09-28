@@ -56,3 +56,5 @@ Use `luatex` to compile `hello.tex` for generating `hello.pdf`:
 ```bash
 $ luatex hello
 ```
+
+If the process of cimpiling hangs up, you can press `Ctrl + d` to continue it.
