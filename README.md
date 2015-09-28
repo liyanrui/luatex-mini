@@ -22,6 +22,7 @@ $ ./build.sh  # you can do some other works until compile process finished.
 After finished the compiling of luatex, you need copy some executable files to `$HOME/luatex-mini/bin`
 
 ```bash
+$ mkdir -p $/HOME/luatex-mini/texmf-linux/bin
 $ cp $HOME/luatex/source/texk/web2c/luatex $HOME/luatex-mini/texmf-linux/bin
 $ cp $HOME/luatex/source/texk/kpathsea/mktexlsr $HOME/luatex-mini/texmf-linux/bin
 $ chmod +x $HOME/luatex-mini/bin/mktexlsr
@@ -37,6 +38,7 @@ $ source $HOME/luatex-mini/setuptex
 $ mktexlsr
 $ cd $HOME/luatex-mini/texmf/tex/generic/luatex
 $ luatex --ini --jobname=luatex --progname=luatex luatex-plain
+$ mkdir -p $HOME/luatex-mini/texmf-var/web2c/luatex/
 $ mv luatex.fmt $HOME/luatex-mini/texmf-var/web2c/luatex/
 
 ## Test
