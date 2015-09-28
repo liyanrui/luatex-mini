@@ -1,0 +1,6 @@
+OWNPATH=$(cd -P -- "$(dirname -- "$BASH_SOURCE")" && pwd -P)
+TEXROOT="$OWNPATH"
+echo "Setting \"$TEXROOT\" as LuaTeX root."
+ 
+TEXMFOS=$TEXROOT/texmf-linux
+export PATH=$TEXMFOS/bin:$PATH

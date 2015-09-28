@@ -1,0 +1,16 @@
+TEXMFMAIN            = $SELFAUTOPARENT/texmf
+TEXMF                = !!$TEXMFMAIN
+TEXMFDBS             = $TEXMF
+TEXINPUTS            = .;$TEXMF/tex/{plain,generic}/{base,hyphen,luatex}//
+
+TEXMFSYSVAR          = $SELFAUTOPARENT/texmf-var
+TEXFORMATS           = .;$TEXMFSYSVAR/web2c/luatex
+
+TEXFONTMAPS          = .;$TEXMF/fonts/map/pdftex//
+ENCFONTS             = .;$TEXMF/fonts/enc/dvips//
+FONTCIDMAPS          = .;$TEXMF/fonts/cid//
+TFMFONTS             = .;$TEXMF/fonts/tfm//
+TTFFONTS             = .;$TEXMF/fonts/truetype//
+OPENTYPEFONTS        = .;$TEXMF/fonts/opentype//
+T1FONTS              = .;$TEXMF/fonts/type1//
+TEXMFCACHE           = $SELFAUTOPARENT/texmf-cache
